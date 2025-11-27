@@ -10,9 +10,9 @@ export interface SiteConfig extends HeaderProps {
 
 export interface SiteContent {
   hero: HeroProps;
-  experience: ExperienceProps[];
   projects: ProjectProps[];
   about: AboutProps;
+  skills: SkillGroup[];
 }
 
 export interface HeroProps {
@@ -46,4 +46,10 @@ export interface AboutProps {
 export interface HeaderProps {
   siteLogo: string;
   navLinks: { text: string; href: string }[];
+}
+
+export interface SkillGroup {
+  title: string;
+  items: string[];
+  description?: string;
 }
