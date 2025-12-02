@@ -28,7 +28,7 @@ export const SITE_CONTENT: SiteContent = {
     name: "Lucia Urcuyo",
     specialty: "Data Scientist",
     summary:
-      "Data scientist in Atlanta focused on shipping reliable analytics, experiments, and machine learning models that move the business.",
+      "Data scientist in Atlanta focused on building practical analytics, experiments, and machine learning models that drive decisions and real business impact.",
     email: "example@email.com",
   },
   projects: [
@@ -56,7 +56,7 @@ export const SITE_CONTENT: SiteContent = {
   ],
   about: {
     description:
-      "Hi! I’m Lucia Urcuyo, a Master’s in Data Science candidate at Georgia Tech. I used to be a pastry chef, but now I serve insights instead of sweets. I fell in love with analytics after I started using data to solve everyday problems: like building a stress monitor app or making sure my boyfriend didn’t overspend on my engagement ring. Turns out analytics and baking aren't so different: both need a ton of creativity, science and precision. I just had to swap the sugar for a ton of statistics.",
+      "Hi! I’m Lucia Urcuyo, a Master’s in Data Science graduate from Georgia Tech. I used to be a pastry chef, but now I serve insights instead of sweets. I fell in love with analytics after I started using data to solve everyday problems: like building a stress monitor app or making sure my boyfriend didn’t overspend on my engagement ring. Turns out analytics and baking aren't so different: both need a ton of creativity, science and precision. I just had to swap the sugar for a ton of statistics.",
     image: "/lu.png",
   },
   skills: [
