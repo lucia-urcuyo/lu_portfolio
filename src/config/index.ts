@@ -4,7 +4,7 @@ export const SITE_CONFIG: SiteConfig = {
   title: "Lucia Urcuyo — Data Scientist",
   author: "Lucia Urcuyo",
   description:
-    "Data scientist based in San Francisco. I turn raw data into clear insights, models, and decision-ready stories.",
+    "Data scientist based in Atlanta. I turn raw data into clear insights, models, and decision-ready stories.",
   lang: "en",
   siteLogo: "/lu_mini.png",
   navLinks: [
@@ -28,7 +28,7 @@ export const SITE_CONTENT: SiteContent = {
     name: "Lucia Urcuyo",
     specialty: "Data Scientist",
     summary:
-      "Data scientist in San Francisco focused on shipping reliable analytics, experiments, and machine learning models that move the business.",
+      "Data scientist in Atlanta focused on shipping reliable analytics, experiments, and machine learning models that move the business.",
     email: "example@email.com",
   },
   projects: [
@@ -42,17 +42,17 @@ export const SITE_CONTENT: SiteContent = {
     {
       name: "Diamond Price Predictor",
       summary: "An e-commerce platform that replicates Shopify's key features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
+      linkPreview: "https://diamond-fair-price.streamlit.app/",
+      linkSource: "https://github.com/lucia-urcuyo/diamonds",
       image: "/hand.png",
     },
-    {
-      name: "Perfect Espresso Shot",
-      summary: "A social network that replicates the features of Instagram",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/espresso.png",
-    },
+    // {
+    //   name: "Perfect Espresso Shot",
+    //   summary: "A social network that replicates the features of Instagram",
+    //   linkPreview: "/",
+    //   linkSource: "https://github.com/immois/astro-zen",
+    //   image: "/espresso.png",
+    // },
   ],
   about: {
     description:
