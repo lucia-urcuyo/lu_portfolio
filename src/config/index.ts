@@ -13,14 +13,11 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "Skills", href: "#skills" },
   ],
   socialLinks: [
-    { text: "Twitter", href: "https://github.com/immois/astro-zen" },
-    { text: "LinkedIn", href: "https://github.com/immois/astro-zen" },
-    { text: "Github", href: "https://github.com/immois/astro-zen" },
-    { text: "Youtube", href: "https://github.com/immois/astro-zen" },
-    { text: "Dribbble", href: "https://github.com/immois/astro-zen" },
+    { text: "LinkedIn", href: "https://www.linkedin.com/in/luciaurcuyo/" },
+    { text: "Github", href: "https://github.com/lucia-urcuyo" },
   ],
-  socialImage: "/zen-og.png",
-  canonicalURL: "https://astro-zen.vercel.app",
+  socialImage: "/screen.png",
+  canonicalURL: "https://lu-portfolio-delta.vercel.app/",
 };
 
 export const SITE_CONTENT: SiteContent = {
@@ -29,7 +26,7 @@ export const SITE_CONTENT: SiteContent = {
     specialty: "Data Scientist",
     summary:
       "Data scientist in Atlanta focused on building practical analytics, experiments, and machine learning models that drive decisions and real business impact.",
-    email: "example@email.com",
+    email: "lurcuyop@gmail.com",
   },
   projects: [
     {
