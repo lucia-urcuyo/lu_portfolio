@@ -8,13 +8,13 @@ export const SITE_CONFIG: SiteConfig = {
   lang: "en",
   siteLogo: "/lu_mini.png",
   navLinks: [
-    { text: "About", href: "#about" },
     { text: "Projects", href: "#projects" },
+    { text: "About", href: "#about" },
     { text: "Skills", href: "#skills" },
   ],
   socialLinks: [
     { text: "LinkedIn", href: "https://www.linkedin.com/in/luciaurcuyo/" },
-    { text: "Github", href: "https://github.com/lucia-urcuyo" },
+    { text: "GitHub", href: "https://github.com/lucia-urcuyo" },
   ],
   socialImage: "/screen.png",
   canonicalURL: "https://lu-portfolio-delta.vercel.app/",
@@ -30,15 +30,28 @@ export const SITE_CONTENT: SiteContent = {
   },
   projects: [
     {
+      name: "LimaLimon",
+      summary:
+        "A shared household meal-planning app that brings recipes, meal plans, grocery lists, and pantry tracking together in one calm, synchronized workspace.",
+      technologies: ["Flutter", "Dart", "Firebase", "Firestore"],
+      linkPreview: "https://apps.apple.com/us/app/limalimon/id6761367490",
+      image:
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1b/73/30/1b733019-242f-c563-6ca7-3190cdd0a38b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    },
+    {
       name: "Mood Predictor",
-      summary: "A music streaming app that emulates Spotify's core features.",
+      summary:
+        "A personal health dashboard that uses daily habit data and logistic regression to estimate tomorrow’s probability of a good mood, reveal key drivers, and suggest practical next steps.",
+      technologies: ["Python", "Streamlit", "scikit-learn", "Plotly"],
       linkPreview: "https://health-dash.streamlit.app/",
       linkSource: "https://github.com/lucia-urcuyo/health",
       image: "/mood.png",
     },
     {
       name: "Diamond Price Predictor",
-      summary: "An e-commerce platform that replicates Shopify's key features.",
+      summary:
+        "An interactive pricing explorer powered by separate XGBoost models for natural and lab-grown diamonds, with price estimates, market distributions, and feature importance.",
+      technologies: ["Python", "Streamlit", "XGBoost", "Altair"],
       linkPreview: "https://diamond-fair-price.streamlit.app/",
       linkSource: "https://github.com/lucia-urcuyo/diamonds",
       image: "/hand.png",
@@ -58,26 +71,82 @@ export const SITE_CONTENT: SiteContent = {
   },
   skills: [
     {
-      title: "Languages",
-      items: ["Python", "R", "SQL"],
-      description: "Analysis, feature engineering, and production-grade scripting.",
+      title: "Programming & Querying",
+      items: ["Python", "R", "SQL", "JavaScript", "HTML/CSS"],
+      description: "Cleaning, exploring, modeling, and querying data.",
     },
     {
-      title: "Platforms & Tools",
-      items: ["Azure", "GCP", "Git", "Tableau", "Power BI"],
-      description: "Cloud environments, version control, and dashboards to ship and monitor data work.",
+      title: "Modeling & Machine Learning",
+      items: [
+        "Machine Learning",
+        "Statistical Modeling",
+        "Experiment Design",
+        "Optimization",
+        "XGBoost",
+        "Optuna",
+        "SHAP",
+      ],
+      description:
+        "Building, validating, and interpreting models for decision-making.",
     },
     {
-      title: "Libraries",
-      items: ["pandas", "NumPy", "scikit-learn", "Matplotlib", "Seaborn"],
-      description: "Python stack for data wrangling, modeling, and visualization.",
+      title: "Analysis & Visualization",
+      items: [
+        "pandas",
+        "Polars",
+        "NumPy",
+        "scikit-learn",
+        "Matplotlib",
+        "D3.js",
+        "Tableau",
+        "Power BI",
+        "Plotly",
+        "Altair",
+      ],
+      description:
+        "Turning complex datasets into clear, decision-ready insights.",
     },
     {
-      title: "Knowledge",
-      items: ["Machine Learning", "Statistical Modeling", "Simulation", "Optimization"],
-      description: "Designing experiments, evaluating models, and tuning systems for impact.",
+      title: "Cloud & Data Engineering",
+      items: [
+        "GCP",
+        "BigQuery",
+        "Vertex AI",
+        "Apache Airflow",
+        "Spark",
+        "Databricks",
+        "AWS",
+        "Azure",
+        "Splunk",
+      ],
+      description:
+        "Building pipelines and analytical systems across cloud platforms.",
+    },
+    {
+      title: "Application Development",
+      items: [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "Firestore",
+        "Firebase Functions",
+        "Streamlit",
+      ],
+      description: "Shipping data products and cross-platform applications.",
+    },
+    {
+      title: "AI & Developer Tools",
+      items: [
+        "LLMs",
+        "LLM Tool Calling",
+        "Claude Code",
+        "Codex",
+        "Git",
+        "Bitbucket",
+        "AI-Assisted Development",
+      ],
+      description:
+        "Building AI-assisted workflows with modern development practices.",
     },
   ],
 };
-
-// #5755ff

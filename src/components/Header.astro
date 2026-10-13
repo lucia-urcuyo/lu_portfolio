@@ -11,7 +11,11 @@ const { siteLogo, navLinks } = Astro.props;
 <header
   class="sticky top-0 z-50 mx-auto flex max-w-5xl animate-slide-in justify-between bg-black px-5 py-6"
 >
-  <a href="/" aria-label="Home link">
+  <a
+    href="/"
+    aria-label="Lucia Urcuyo home"
+    class="rounded-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+  >
     <Image
       class="rounded-full"
       src={siteLogo}
@@ -27,6 +31,7 @@ const { siteLogo, navLinks } = Astro.props;
     class="px-1.5 text-neutral sm:hidden"
     aria-expanded="false"
     aria-controls="main-menu"
+    aria-label="Toggle navigation menu"
   >
     <Menu />
   </button>
@@ -40,7 +45,7 @@ const { siteLogo, navLinks } = Astro.props;
         navLinks.map((link) => (
           <li class="relative">
             <a
-              class={`nav-item relative block p-2 text-sm font-medium transition-all duration-500 after:absolute after:bottom-0 after:left-2/4 after:h-2 after:w-1 after:-translate-x-2/4 after:text-primary after:opacity-0 after:content-['•'] hover:text-white`}
+              class={`nav-item relative block rounded-sm p-2 text-sm font-medium transition-all duration-500 after:absolute after:bottom-0 after:left-2/4 after:h-2 after:w-1 after:-translate-x-2/4 after:text-primary after:opacity-0 after:content-['•'] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary`}
               href={link.href}
             >
               {link.text}

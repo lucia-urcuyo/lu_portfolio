@@ -1,12 +1,11 @@
 ---
-import type { HeroProps } from "@types";
-type Props = HeroProps;
+import type { HeroProps, SiteConfig } from "@types";
+type Props = HeroProps & Pick<SiteConfig, "socialLinks">;
 
-const { name, specialty, summary } = Astro.props;
-const emailToUse = "lurcuyop@gmail.com";
+const { name, specialty, summary, email, socialLinks } = Astro.props;
 ---
 
-<section class="py-24 md:py-32" id="#hero">
+<section class="py-24 md:py-32" id="hero">
   <h1
     class="mb-1.5 font-serif text-7xl font-bold tracking-tightest text-white sm:text-8xl md:mb-0 md:text-9xl"
   >
@@ -21,8 +20,22 @@ const emailToUse = "lurcuyop@gmail.com";
     {summary}
   </p>
 
-  <a
-    class="inline-block rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-[#fff]"
-    href={`mailto:${emailToUse}`}>Get in Touch</a
-  >
+  <div class="flex flex-wrap items-center gap-x-6 gap-y-4">
+    <a
+      class="inline-block rounded-full bg-primary px-8 py-5 text-sm leading-5 font-semibold text-black transition-colors hover:bg-[#fcd34d] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+      href={`mailto:${email}`}>Get in Touch</a
+    >
+    {
+      socialLinks.map(({ text, href }) => (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-sm font-medium text-white underline-offset-4 hover:text-primary hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+        >
+          {text}
+        </a>
+      ))
+    }
+  </div>
 </section>

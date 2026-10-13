@@ -19,6 +19,7 @@ export interface HeroProps {
   name: string;
   specialty: string;
   summary: string;
+  email: string;
 }
 
 export interface ExperienceProps {
@@ -32,6 +33,7 @@ export interface ExperienceProps {
 export interface ProjectProps {
   name: string;
   summary: string;
+  technologies: string[];
   image: string;
   linkPreview?: string;
   linkSource?: string;
